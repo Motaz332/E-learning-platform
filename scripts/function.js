@@ -67,6 +67,3 @@ collab.onclick = function(){
         body.style.display = "grid"
     }
 }
-let te3t = 3;
-
-let ho = 2
