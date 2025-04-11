@@ -1,3 +1,5 @@
+/* __________________________Moataz WorkSpace Start____________________________ */
+/* __________________________Static in all pages that have header____________________________ */
 header{
     display: flex;
     flex-flow: row nowrap;

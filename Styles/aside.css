@@ -1,5 +1,5 @@
 /* __________________________Moataz WorkSpace Start____________________________ */
-/* __________________________Static in all pages____________________________ */
+/* __________________________Static in all pages thats have a side____________________________ */
 body>aside{
     background-image: linear-gradient(230deg,var(--aside-color-top) 55%,var(--aside-color-bottom));
     background-size: 100vh;
