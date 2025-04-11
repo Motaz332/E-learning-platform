@@ -8,7 +8,7 @@ let course = `<a class="course">
                 </a>`;
 function addCourse(img,courseName,Descreption,Hours,Price){
      return `<a class="course">
-                    <img src="../Resources/Image.png" alt="">
+                    <img src="../Resources/image.png" alt="">
                     <h2>Course Descreption</h2>
                     <div>
                         <p class="hours">${Descreption}</p>
