@@ -1,5 +1,5 @@
 let course = `<a class="course">
-                    <img src="../Resources/Image.png" alt="">
+                    <img src="../Resources/image.png" alt="">
                     <h2>Course Descreption</h2>
                     <div>
                         <p class="hours">hour to compelete(99)</p>
