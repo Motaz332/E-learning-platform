@@ -1,17 +1,84 @@
+/**
+ * color are static variables*
+ * varables in local storage:-
+ *           signed -> if sign 'yes'   -    else 'no' or 'null'
+ *           accounts is array holds the signed accouts
+ *           
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+*/
+
+
 window.onload = function () {
+
+        // _________get theme from localStorage________
     let savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") {
         document.getElementById("cbx-51").checked = true;
         theme()
     }
 
-    if(document.title === "Explore Courses"){
-        for(let cat = 0;cat<types.length;cat++){
-            courses.innerHTML+=`${addCourse(0,cat,types[cat],0,0)}`;
+
+
+    let is_signed = localStorage.getItem('signed')
+    if(is_signed === 'yes'){
+        let a = document.querySelectorAll('a')
+        let acc = a[5]
+        acc.innerText = 'Account'
+        if(document.title = 'SuperEdu')
+            acc.href = '/Templets/Account.html'
+        else acc.href = '../Templets/Account.html'
+
+        let logout = a[6]
+        logout.innerText = 'Logout'
+        logout.onclick= ()=>{
+            localStorage.setItem('signed','no')
+            location.reload()
         }
+
+    }else{
+        let a = document.querySelectorAll('a')
+        let log = a[5]
+        log.innerText = 'Log In'
+
+        let Register = a[6]
+        Register.innerText = 'Register'
+        Register.href = 'SignUp.html'
+    } 
+
+    //store default account
+    if(localStorage.getItem('accounts') == null){
+        localStorage.setItem('accounts',JSON.stringify([['Moataz','Moataz1#']]))
     }
 };
 
+
+
+        /*_____________varaibles________________*/
+let aside = document.getElementById("sidebar")
+let collab = document.getElementById("collab")
+let continer = document.getElementById("continer")
+let body = document.querySelector("body")
+
+
+
+
+
+
+
+
+
+
+
+
+            /*___________________functions__________*/
+
+
+            // light & dark theme colors
 function theme(){
     let checkbox = document.getElementById("cbx-51");
     if (checkbox.checked == true) {
@@ -44,29 +111,25 @@ function theme(){
 }
 
 
-let aside = document.getElementById("sidebar")
-let collab = document.getElementById("collab")
-let continer = document.getElementById("continer")
-let body = document.querySelector("body")
-aside.style.width = "100%"
-collab.onclick = function(){
-    
-    if(aside.style.width === "100%"){
-        aside.style = "width : 0"
-        setTimeout(() => {
-            aside.style.display = "none"
-            body.style.display = "block"
-        }, 500);
+// ________________close & open -siade bar
+if(collab != 'null'){
+    collab.onclick = function(){
         
-    }
-    else{
-        setTimeout(() => {
-            aside.style = "width :100%"
-        }, 50);
-        aside.style.display = "block"
-        body.style.display = "grid"
+        if(aside.style.width === "100%"){
+            aside.style = "width : 0px"
+            setTimeout(() => {
+                aside.style.display = "none"
+                body.style.display = "block"
+            }, 500);
+            
+        }
+        else{
+            setTimeout(() => {
+                aside.style = "width :100%"
+            }, 50);
+            aside.style.display = "block"
+            body.style.display = "grid"
+        }
     }
 }
-let te3t = 3;
-var hi = "hi"
-let ho = 2
+

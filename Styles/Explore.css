@@ -21,46 +21,22 @@ main .courses{
     gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
-
+    margin-right: 20px;
+    background-color: green;
 }
-
-
 main .courses .course{
-    padding: 10px;
-}
-
-main .courses .course {
-    background-color: var(--button-color1);
+    background-color: red;
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
-    gap: 8px;
-    border-radius: 10px;
-    transition-duration: 0.2s;
-    cursor: pointer;
-    opacity: .92;
+    flex-basis: 100px;
+
+}
+main .courses img{
+    width: 200px;
+    height: 150px;
+
 }
 
-main .courses .course:hover {
-    transform: scale(1.05) translate(0,-5px);
-    box-shadow: 0 0 2px 0 var(--text-color2);
-    opacity: 1;
-}
-
-main .courses .course img{
-    flex-basis: 70%;
-}
-
-main .courses .course>div{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-main .courses .course p{
-    padding: 10px;
-    color : var(--paragarph-color1);
-}
 
 .filterButton{
     display: flex;
