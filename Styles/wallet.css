@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f6f8;
+    padding: 30px;
+  }
+  
+  .wallet-container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wallet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .wallet-header h2 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .balance {
+    font-size: 36px;
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  .add-funds-btn {
+    background-color: #690ac2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .add-funds-btn:hover {
+    background-color: #3c0675;
+  }
+  
+  .transaction-history {
+    margin-top: 30px;
+  }
+  
+  .transaction-history h3 {
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  @media (max-width: 600px) {
+    .wallet-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .add-funds-btn {
+      margin-top: 15px;
+      width: 100%;
+    }
+  
+    .balance {
+      font-size: 28px;
+    }
+  }
+  

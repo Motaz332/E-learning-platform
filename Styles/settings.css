@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 40px;
+  }
+  
+  .profile-container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .profile-container h2 {
+    margin-bottom: 25px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .profile-photo-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  #upload-photo {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .profile-form label {
+    display: block;
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  .profile-form input {
+    width: 100%;
+    padding: 10px 14px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .save-btn {
+    width: 100%;
+    background-color: #690ac2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .save-btn:hover {
+    background-color: #3c0675;
+  }
+  
+  @media (max-width: 600px) {
+    .profile-container {
+      padding: 20px;
+    }
+  }
+  

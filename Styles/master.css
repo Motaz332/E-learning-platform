@@ -1,0 +1,204 @@
+body{
+    display: grid;
+    grid-template-columns: .2fr 1fr;
+    height: 100vh;
+    background-color: var(--background-c1);
+}
+
+main{
+    padding-bottom: 50px;
+}
+
+main .landing{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+
+main .landing img{
+    width: 400px;
+    position: relative;
+}
+
+main .landing  .landing-image{
+    position: relative;
+}
+
+main .landing .circle{
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    display: inline;
+    border-radius: 500px;
+    left: 1px;
+    top: 55px;
+    background-color: #418CD1;
+    z-index: -1;
+}
+
+main .landing .landing-welcome{
+    display: flex;
+    flex-flow:column nowrap;
+    width: 300px;
+    gap:70px;
+    align-items: center;
+}
+
+main .landing .landing-welcome h1{
+   letter-spacing: 1px;
+   font-size: 40px;
+   color: var(--text-color1);
+}
+
+
+main .landing .landing-welcome p{
+    margin-top: 20px;
+    color: var(--paragarph-color1);
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main .landing .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;;
+}
+
+main .landing .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+
+main .landing .buttons a {
+    background-color: #17E783;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+main .landing .buttons a:nth-child(1) {
+    background-color: #EC5C2E;
+    color: white;
+}
+
+
+/* ________________________________________- */
+main .personal-progress{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+main .personal-progress .info{
+    background-color: white;
+    height: 160px;
+    width: 240px;
+    border-radius: 30px;
+}
+
+
+main .personal-progress .info{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition-duration: 0.2s;
+    background-color: var(--button-color1);
+}
+
+main .personal-progress .info:hover{
+    transform: scale(1.1);
+}
+
+
+main .personal-progress .info>div{
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 20px;
+    padding-top: 15px;
+    padding-left: 30px;
+
+}
+
+main .personal-progress .info>div>p{
+    font-size: 13px;
+    position: relative;
+    top: -25px;
+    left: 60px;
+    opacity: 0.6;
+
+}
+
+main .personal-progress .info>p{
+    color: blue;
+    cursor: pointer;
+}
+
+
+main .personal-progress .info h2{
+    position: relative;
+    left: -10px;
+    top:5px;
+}
+
+main .personal-progress .info>div i{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:10px;
+    align-items: center;
+    height: 60px;
+    font-size: 22px;
+    border-radius: 50px;
+    background-image: linear-gradient(230deg,#4C6FFF,#BB65FF 55%);
+}
+
+main .personal-progress .info:nth-child(2)>div i{
+    background-image: linear-gradient(230deg,#FFA674,#FF3737 55%);
+    
+}
+
+
+main .personal-progress .info:nth-child(3)>div i{
+    background-image: linear-gradient(230deg,#FF974D,#FFE925 55%);
+    
+}
+
+
+main .personal-progress .info:nth-child(4)>div i{
+    background-image: linear-gradient(230deg,#20AF62,#17E783 55%);
+    
+}
+
+
+
+main .personal-progress .info:nth-child(2)>p{
+    color: #FF3737;
+}
+main .personal-progress .info:nth-child(3)>p{
+    color: #FFE925;
+}
+main .personal-progress .info:nth-child(4)>p{
+    color: #17E783;
+}
+
+footer {
+    background-image: linear-gradient(230deg,var(--aside-color-top),var(--aside-color-bottom));
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }

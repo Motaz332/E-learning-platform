@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/reviews.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Courses Reviews</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Courses Reviews</h1>
+            <p>We'd love to hear your thoughts! Please rate and review your courses to help others make informed
+                decisions.</p>
+        </header>
+
+        <section class="reviews-section">
+            <h2>Recent Reviews</h2>
+            <div class="review">
+                <div class="review-header">
+                    <span class="review-name">John Doe</span>
+                    <span class="review-date">April 25, 2025</span>
+                </div>
+                <div class="review-body">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="review-text">This course was incredibly insightful and engaging! I learned a lot about AI
+                        and how it applies in real-world scenarios. Highly recommend!</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="review-header">
+                    <span class="review-name">Jane Smith</span>
+                    <span class="review-date">April 23, 2025</span>
+                </div>
+                <div class="review-body">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">The web development course was excellent! The lessons were clear, the
+                        examples were practical, and the instructor was very knowledgeable. I now feel confident
+                        building websites!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="leave-review-section">
+            <h2>Leave a Review</h2>
+            <form action="#" method="post" class="review-form">
+                <div class="form-group">
+                    <label for="course">Select Course</label>
+                    <select id="course" name="course" required>
+                        <option value="">--Select a Course--</option>
+                        <option value="AI">JavaScript Basics</option>
+                        <option value="Web">AI & Deep Learning</option>
+                        <option value="Design">Advanced Python</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <div class="rating">
+                        <i class="fas fa-star" data-rating="1"></i>
+                        <i class="fas fa-star" data-rating="2"></i>
+                        <i class="fas fa-star" data-rating="3"></i>
+                        <i class="fas fa-star" data-rating="4"></i>
+                        <i class="fas fa-star" data-rating="5"></i>
+                    </div>
+                    <input type="hidden" id="rating-value" name="rating" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="review">Your Review</label>
+                    <textarea id="review" name="review" rows="4" placeholder="Write your review..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Review</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 SuperEdu. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

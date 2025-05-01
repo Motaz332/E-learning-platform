@@ -1,0 +1,268 @@
+body{
+    display: grid;
+    grid-template-columns: .2fr 1fr;
+    height: 100vh;
+    background-color: var(--background-c1);
+    transition-duration: 0.3s;
+}
+
+.sliderfixer{
+        height: 100vh;
+}
+
+
+.account-conrer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.div2{
+
+    height: 50%;
+    width:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pic{
+    width: 100%;
+    height: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pic img{
+    height: 9vw;
+    width: 9vw;
+    border-radius: 50%;
+}
+
+.info{
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info h1 {
+    font-size: 1.5vw;
+    display: block;
+}
+
+
+.btns{
+    margin-top: 1vw;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+}
+#btn1,#btn2,#btn3{
+    font-weight: 600;
+}
+.btns button {
+    
+    width: 100%;
+    height: 1%;
+    cursor: pointer;
+    transition: .5s;
+    left: 3vw;
+    text-align:left ;
+    font-size: 1vw;
+    color: rgb(90, 89, 89);
+    background-color:transparent;
+    text-wrap: nowrap;
+    cursor: pointer;
+    position: relative;
+    font-size: 22px;
+    outline: none;
+    border: none;
+}   
+
+.basic {
+    width: 90%;
+    height: 3vw;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.div2 input {
+    background-color: #0848634a;
+
+
+}
+
+
+.headd{
+    width:95% ;
+height: 15%;
+}
+
+.headd h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.links{
+    width: 100%;
+    height: 50%;
+    background-color: blueviolet;
+}
+
+
+.selectedbtn{
+    width: 100%;
+    height: 15%;
+    background-color:aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    left: 3vw;
+    text-align:left ;
+    font-size: 1vw;
+    color: rgb(90, 89, 89);
+    background-color:deepskyblue;
+}
+
+.darkmodebtn{
+    width: 100%;
+    height: 15%;
+    background-color:aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    left: 3vw;
+    text-align:left ;
+    font-size: 1vw;
+    color: #0848634a;
+    background-color: #00000000;
+}
+
+.div4 {
+    height: 40%;
+    width:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div4 input {
+    border: 1px solid gray;
+    background-color: #0848634a;
+}
+
+
+.active{
+    color: white !important;
+    text-align: center;
+    border-radius: 10px;
+}
+.active ::before{
+    content: "";
+}
+.divbtnshowpass{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: end;
+}
+.showpass{
+    height: 100%;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 5px;
+    font-size: 1vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 3vw;
+}
+
+input{
+    font-size: 1vw;
+}
+
+
+
+#divofbasics{
+    display: flex;
+    gap:15px;
+
+}
+#divofbasics input{
+    outline: none;
+    text-align: center;
+}
+#divofbasics h1{
+    color: var(--text-color2);
+}
+
+#divofbasics .headd{
+    text-align: center;
+}
+h2{
+    color: var(--text-color2);
+}
+
+
+#divofSecurity{
+    display: flex;
+    gap:15px;
+
+}
+#divofSecurity input{
+    outline: none;
+    text-align: center;
+}
+#divofSecurity h1{
+    color: var(--text-color2);
+}
+
+#divofSecurity .headd{
+    text-align: center;
+}
+h2{
+    color: var(--text-color2);
+}
+
+#showpassbtn{
+    margin:auto;
+    padding: 8px;
+    background-color: var(--button-color1);
+    border-radius: 12px;
+    outline: none;
+
+}
+
+
+#divofsocialacc{
+    display: flex;
+    gap:15px;
+
+}
+#divofsocialacc input{
+    outline: none;
+    text-align: center;
+}
+#divofsocialacc h1{
+    color: var(--text-color2);
+}
+
+#divofsocialacc .headd{
+    text-align: center;
+}
+h2{
+    color: var(--text-color2);
+}
+/* --button-hover-color */

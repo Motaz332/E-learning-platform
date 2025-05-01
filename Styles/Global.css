@@ -1,0 +1,44 @@
+:root{
+    /*dark theme*/
+    --aside-text-color: #5f7be0;
+    --button-hover-color:#0848634a;
+    --aside-color-top:#242a2f;
+    --aside-color-bottom:#07074b;
+    --background-c3:#0d0808;
+    --icon-color:#bababadf;
+    --paragarph-color1:#2c2a2d;
+    --button-color1:#9fd4f3;
+    --botton-color2:#2828a2;
+    --background-c1 :#050f18;
+    --text-color1: #c8c6c6;
+    --text-color2:white;
+    /*light theme*/
+    --aside-text-color : white;
+    --button-hover-color:#ffffff39;
+    --aside-color-top:#418CD1;
+    --aside-color-bottom:#9C41D1;
+    --background-c3:white;
+    --icon-color: #515151df;
+    --paragarph-color1:#767278;
+    --button-color1:white;
+    --button-color2:#0276e3;
+    --background-c1 : #F5F7F9;
+    --text-color1:black;
+    --text-color2:black;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-style: none;
+}
+
+a{
+    
+    text-decoration: none;
+    color: inherit;
+}
+

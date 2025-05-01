@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #690ac2;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+.reviews-section,
+.leave-review-section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #690ac2;
+}
+
+.review {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.review-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.review-date {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.review-rating {
+    margin-top: 10px;
+    color: #FFD700;
+}
+
+.review-rating i {
+    margin-right: 5px;
+}
+
+.review-text {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+.leave-review-section .review-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-form .form-group {
+    margin-bottom: 20px;
+}
+
+.review-form label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.review-form textarea {
+    resize: vertical;
+}
+
+.rating {
+    display: flex;
+    gap: 5px;
+}
+
+.rating i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ddd;
+}
+
+.rating i:hover,
+.rating i.selected {
+    color: #FFD700;
+}
+
+.submit-btn {
+    background-color: #690ac2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3c0675;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #690ac2;
+    color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
